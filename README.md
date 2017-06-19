@@ -20,7 +20,7 @@ adb install app/build/outputs/apk/app-debug.apk
 
 1、从电脑将补丁push到移动端(mac命令push到模拟器)（huscarter/AtlasTest中的 /storage要去掉）
 
-adb push app/build/outputs/tpatch-debug/update-1.0.0.json /sdcard/Android/data/com.whh.atlastest/cache/update.json
+adb push app/build/outputs/tpatch-debug/update.json /sdcard/Android/data/com.whh.atlastest/cache/update.json
 
 adb push app/build/outputs/tpatch-debug/patch-1.0.1\@1.0.0.tpatch /sdcard/Android/data/com.whh.atlastest/cache
 
