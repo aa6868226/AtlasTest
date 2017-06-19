@@ -18,11 +18,11 @@ adb install app/build/outputs/apk/app-debug.apk
 
 - 推送补丁 
 
-1、从电脑将补丁push到移动端(mac命令push到模拟器)
+1、从电脑将补丁push到移动端(mac命令push到模拟器)（huscarter/AtlasTest中的 /storage要去掉）
 
-adb push app/build/outputs/tpatch-debug/update-1.0.0.json /storage/sdcard/Android/data/com.whh.atlastest/cache/update.json
+adb push app/build/outputs/tpatch-debug/update-1.0.0.json /sdcard/Android/data/com.whh.atlastest/cache/update.json
 
-adb push app/build/outputs/tpatch-debug/patch-1.0.1\@1.0.0.tpatch /storage/sdcard/Android/data/com.whh.atlastest/cache
+adb push app/build/outputs/tpatch-debug/patch-1.0.1\@1.0.0.tpatch /sdcard/Android/data/com.whh.atlastest/cache
 
 2、服务器推送补丁到移动端安装
 
@@ -38,7 +38,7 @@ Todo.
 
 1、从电脑将补丁push到移动端(mac命令push到模拟器)
 
-adb push app/build/outputs/remote-bundles-debug/libcom_whh_remotebundle.so /storage/sdcard/Android/data/com.whh.atlastest/cache
+adb push app/build/outputs/remote-bundles-debug/libcom_whh_remotebundle.so /sdcard/Android/data/com.whh.atlastest/cache
 
 2、服务器推送补丁到移动端安装
 
